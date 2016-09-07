@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+
+</head>
+<body data-ng-app="" data-ng-init="products=[{id:'prd1',name:'mobile',price:'5000'},{id:'prd2',name:'tv',price:'50400'},{id:'prd3',name:'laptop',price:'50080'}]">
+
+
+first name: <input type="text" ng-model="firstname">
+last name: <input type="text" ng-model="lastname">
+
+full name : {{firstname+ " " + lastname}}
+
+
+
+</br>
+</br>
+</br>
+
+
+no of products: <input type="number" ng-model="p">
+quantity: <input type="number" ng-model="q">
+
+total : {{p*q}}
+
+</br>
+</br>
+</br>
+<table border="3">
+<thead>
+<tr>
+<td>product id</td>
+
+<td>product name</td>
+
+<td>product price</td>
+
+</tr>
+
+</thead>
+
+<tr ng-repeat="p in products">
+<td>
+{{p.id}}
+</td>
+
+<td>
+{{p.name}}
+</td>
+
+<td>
+
+{{p.price}}
+
+</td>
+</tr>
+
+
+
+
+
+
+
+</table>
+
+
+
+</body>
+</html>
