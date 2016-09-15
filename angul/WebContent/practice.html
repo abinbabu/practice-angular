@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><title>angularjs</title>
+</head>
+<body ng-app="myApp">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+
+<div ng-controller="MyController">
+<p ng-hide="isspy">firstname is {{firstname}}</p>
+<p ng-hide="isspy">lastname is {{lastname}}</p>
+<p ng-hide="isspy">fullname is {{fullname()}}</p>
+<p ng-show="isspy">codename is {{codename}}</p>
+
+</div>
+
+</body>
+</html>
