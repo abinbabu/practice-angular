@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head><title>angularjs</title>
+</head>
+<body ng-app="myApp">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+
+<div ng-controller="MyController">
+       <h2>reviews</h2>
+       <div ng-repeat="review in reviews">
+       <div style="background-color:#EEEEEE">
+       	
+       	 <p>{{review.comment}}</p>
+       	 <p><b>{{review.by}}</b></p>
+       </div>
+       	
+
+       </div>
+<form name="reviewform">
+<p>{{form.comment}}</p><br>
+<p>{{form.by}}</p>
+
+<label>comment</label><br>
+<textarea ng-model="form.comment"></textarea><br>
+<label>author</label><br>
+<input ng-model="form.by" type="email"/>	
+
+
+</form>
+
+
+</div>
+
+</body>
+</html>
