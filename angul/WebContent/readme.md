@@ -1,2 +1,2 @@
-slt practice ----- *demo*
-video tutorial---- *practic**
+slt practice ----- @@@@@@@@@@@@@@@@@@@@@@@@@@@@*demo*
+video tutorial---- @@@@@@@@@@@@@@@@@@@@@@@@@@@@*practice**
